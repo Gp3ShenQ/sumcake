@@ -1,0 +1,214 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./index.css")
+        link(rel="stylesheet", href="./iconmoon/style.css")
+        script(src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous")
+        script(defer src="./index.js") 
+        title 豐味堂
+        link(rel="shortcut icon", href="./bgimg/favicon.png")
+        meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1')
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css')
+        script(src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js")
+    body 
+        .indeximg#1
+        .tbar 
+            .wtbar
+                p 豐味堂
+            .back
+                .t.icon 
+                    .icon-home
+                .t.tback
+                    p 回首頁 
+    
+        .fltbar 
+            .flpic 
+            .flword
+                .w.fl1(anchor-target=".story-box")
+                    p 餅的故事
+                .w.fl2(anchor-target=".commodity-box") 
+                    p 所有商品
+                .w.fl3(anchor-target=".map-box") 
+                    p 門市據點
+                .w.fl4
+                    p 常見問題
+                .w.fl5
+                    p 聯絡我們
+            .line 
+                .li.line1 
+                .li.line2 
+                .li.line3 
+
+        .leftbar-shadow
+        .leftbar-box 
+            .leftbar-img 
+                img(src="./bgimg/leftbarimg.png", alt="")
+            .leftbar-word
+                .l.bar1(anchor-target=".story-box")
+                    p 餅的故事
+                .l.bar2(anchor-target=".commodity-box")  
+                    p 所有商品
+                .l.bar3(anchor-target=".map-box")  
+                    p 門市據點
+                .l.bar4 
+                    p 常見問題
+                .l.bar5 
+                    p 聯絡我們
+        
+        .midImg-box 
+            .boxImg
+                .midBox 
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide 
+                                img(src="./bgimg/pic10.jpg", alt="")
+                            .swiper-slide 
+                                img(src="./bgimg/pic11.jpg", alt="")
+                            .swiper-slide 
+                                img(src="./bgimg/pic12.jpg", alt="")
+                            .swiper-slide 
+                                img(src="./bgimg/pic13.jpg", alt="")
+                            .swiper-slide 
+                                img(src="./bgimg/pic14.jpg", alt="")
+                        .swiper-button-next
+                        .swiper-button-prev
+                        .swiper-pagination
+    
+        .story-box#2
+            .box-shadow 
+            .story-img-box
+                .b.box1
+                    img(src="./bgimg/commodity1.jpg", alt="")
+                .b.box2
+                    img(src="./bgimg/commodity2.jpg", alt="")
+            .story-word-box 
+                .wordbox
+                    .word
+                        p &nbsp;&nbsp;太陽餅在台中地區的製作和銷售可以追溯到早期的台灣日治時期（1895年-1945年）。在當時，台灣的糕餅業開始蓬勃發展，太陽餅作為其中的一種特色糕點逐漸受到歡迎。
+                        br
+                        p &nbsp;&nbsp;許多傳統糕餅店在台中地區開始製作太陽餅，並且將其作為招牌產品之一。這些店家通常以家族經營為主，世代相傳，各自保持著獨特的製作方法和口味。因此，可以說台中太陽餅的起源是多元而多樣的。
+                        
+        .commodity-box#3
+            .commoditybtn-inbox
+                .commodity-cbox
+                    .commodity.btn1
+                        p 太陽餅
+                    .inner.n1(style="display: none") 
+                        .comm.m1
+                            p 蜂蜜太陽餅 10入-30入
+                        .comm.m2 
+                            p 麥芽太陽餅 10入-30入
+                        .comm.m3
+                            p 黑糖太陽餅 20入
+                        .comm.m4
+                            p 草莓太陽餅 20入
+                        .comm.m5
+                            p 芋頭太陽餅 20入
+                    .commodity.btn2 
+                        p 檸檬餅
+                    .inner.n1(style="display: none") 
+                        .comm.m1
+                            p 檸檬餅 6入
+                        .comm.m2
+                            p 檸檬餅 12入
+                        .comm.m3
+                            p 檸檬餅 18入
+                    .commodity.btn3
+                        p 綜合、其他系列
+                    .inner.n1(style="display: none")  
+                        .comm.m1
+                            p 公婆餅
+                        .comm.m2
+                            p 香妃酥
+                        .comm.m3
+                            p 鳳梨酥
+                        .comm.m4
+                            p 奶油酥餅
+
+            .commodityimg-inbox#4
+                .commodityimg-box
+                    .commodity-change
+                        .swiper11.mySwiper11
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src="./bgimg/comm1.jpg", alt="")
+                                .swiper-slide
+                                    img(src="./bgimg/comm2.jpg", alt="")
+                                .swiper-slide
+                                    img(src="./bgimg/comm3.jpg", alt="")
+                                .swiper-slide
+                                    img(src="./bgimg/comm4.jpg", alt="")
+                            .swiper-pagination
+
+        .map-box #5
+            .mapapibox 
+                .mapapi 
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.300759237471!2d120.67279621081525!3d24.161182778302216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d7ce5319fb1%3A0x61bd05a22683b8eb!2zNDA05Y-w5Lit5biC5YyX5Y2A5Lit5riF6Lev5LiA5q61MzUw6Jmf!5e0!3m2!1szh-TW!2stw!4v1688912301023!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade", frameborder="0") 
+            .mapwordbox 
+                .maptitle 
+                    p 門市地址 :
+                    .innerbox
+                        .mapadress 
+                            .iconnn.adress 
+                                .icon-location2
+                            .adressword
+                                p 台中市北區中清路一段350號
+                        .mapphone 
+                            .iconnn.phone
+                                .icon-phone-hang-up
+                            .phoneword
+                                p (04)2201-4280
+
+        .end-box#6
+            .end-inbox 
+                .mark-box
+                    .end1
+                        .mark
+                    .end2
+                        .menu
+                            .m1 
+                                p 所有商品
+                            .m2
+                                p 門市據點
+                            .m3
+                                p 常見問題
+                            .m4
+                                p 聯絡我們
+                    .end2
+                        .commodity 
+                            .c1 
+                                p 太陽餅
+                            .c2 
+                                p 檸檬餅
+                            .c3 
+                                p 綜合系列
+                .fb-box 
+                    .fb
+                        .fb-shadow
+                        .fb-top 
+                            .fbimg 
+                            .fbword
+                                .fbtitle 
+                                    p 豐味堂
+                                .fbfans 
+                                    p 2,014,280位追蹤者
+                        .fb-bottom 
+                            .fb-bbox
+                                .flicon 
+                                    .icon-facebook21
+                                .fb-flword 
+                                    p 追蹤粉絲專頁
+                            .fb-sbox 
+                                .sicon 
+                                    .icon-redo2
+                                .fb-sword
+                                    p 分享
+                    .opentime 
+                        .opword 
+                            p | 營業時間：上午8:30 – 下午8:30 |
+
+        .ShenQ 
+            .ShenQ-word     
+                p ◎ ShenQ - 設計維護               

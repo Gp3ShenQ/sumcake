@@ -371,7 +371,7 @@
         right: auto
         bottom: auto
 
-    @media screen and (max-width: 1000px)
+    @media screen and (max-width: 1024px)
       display: none
       
 
@@ -394,7 +394,7 @@
       line-height: 1.5
       @media screen and (max-width: 1633px)
         top: 30%
-      @media screen and (max-width: 1000px)
+      @media screen and (max-width: 1024px)
         font-size: 20px
       @media screen and (max-width: 600px)
         font-size: 16px
@@ -406,7 +406,7 @@
   position: relative
   display: flex
   align-items: center
-  @media screen and (max-width: 1000px)
+  @media screen and (max-width: 1024px)
     flex-direction: column
 
   .mapapibox
@@ -415,7 +415,7 @@
     justify-content: center
     width: 50%
     padding-left: 50px
-    @media screen and (max-width: 1000px)
+    @media screen and (max-width: 1024px)
       width: 100%
       padding-right: 50px
 
@@ -423,7 +423,7 @@
       width: 100%
       iframe
         width: 100%
-      @media screen and (max-width: 1000px)
+      @media screen and (max-width: 1024px)
         margin-bottom: 0
 
   .mapwordbox
@@ -431,7 +431,7 @@
     color: white
     padding-left: 50px
     padding-right: 50px
-    @media screen and (max-width: 1000px)
+    @media screen and (max-width: 1024px)
       width: 100%
       line-height: 40px
       padding: 0
@@ -441,12 +441,13 @@
       background-color: #901317
       display: inline-block
       width: 100%
+
       font-size: 30px
       font-weight: 700
       padding: 20px
       border-radius: 20px
 
-      @media screen and (max-width: 1000px)
+      @media screen and (max-width: 1024px)
         display: flex
         background-color: #B53B03
         width: 100%
@@ -454,10 +455,12 @@
         border-radius: 0
         font-size: 20px
         padding: 0
-
-      p
-        @media screen and (max-width: 1000px)
-          margin: 10px 0px 0px 10px
+        .innerbox
+          display: flex
+          align-items: center
+      // p
+      //   @media screen and (max-width: 1024px)
+      //     margin: 10px 0px 0px 10px
 
       .icon-location2,.icon-phone-hang-up
         padding: 8px
@@ -469,11 +472,11 @@
         display: flex
         font-size: 25px
         line-height: 40px
-        padding: 30px
-        @media screen and (max-width: 1000px)
+        @media screen and (max-width: 1024px)
           font-size: 16px
-          padding: 0 0 0 50px 
+          padding: 0 0 0 30px 
           line-height: 10px
+          align-items: center
 
   //====== 最下方區塊
 .end-box
@@ -486,7 +489,7 @@
     display: flex
     margin: 0 auto
     +wh(80% , 50%)
-    @media screen and (max-width: 1070px)
+    @media screen and (max-width: 1024px)
       flex-direction: column
     @media screen and (max-width: 560px)
       width: 100%
@@ -496,7 +499,7 @@
     .mark-box
       width: 60%
       display: flex
-      @media screen and (max-width: 1070px)
+      @media screen and (max-width: 1024px)
         width: 100%
 
       .end1
@@ -504,7 +507,7 @@
         justify-content: center
         align-items: center
         +wh(40%, 100%)
-        @media screen and (max-width: 1070px)
+        @media screen and (max-width: 1024px)
           position: relative
           margin: auto 0
 

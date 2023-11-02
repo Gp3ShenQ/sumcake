@@ -16,11 +16,21 @@ $(window).on('resize',function() {
 $('.leftbar-shadow').on('click',function(){
   $('.leftbar-shadow').removeClass('change')
   $('.leftbar-box').removeClass('change')
+  $('.question').removeClass('change')
 })
 
 $('.l,.leftbar-img').on('click',function(){ 
   $('.leftbar-shadow').removeClass('change')
   $('.leftbar-box').removeClass('change')
+})
+
+$(".w.fl5,.l.bar5").on("click",function(){
+  if($(".question").hasClass('change')){
+    $('.question').removeClass('change')
+    return
+  }
+  $(".question").addClass('change')
+  $('.leftbar-shadow').addClass('change')
 })
 
 //-----------首頁輪播
@@ -80,17 +90,11 @@ $('.leftbar-img').on('click',function(){
 
 
 const anchor = (el) => {
-  el.addEventListener('click',function (){
-    const target = $(el).attr('anchor-target');
+  $(el).on('click',function (){
+    const target = $(this).attr('anchor-target');
     const height = $(target).offset().top - 130;
     window.scrollTo({top: height, behavior: 'smooth'})
   })
 }
-
-$('.w').each((index,element)=>{
-  anchor(element)
-})
-
-$('.l',).each((index,element)=>{
-  anchor(element)
-})
+anchor('.w')
+anchor('.l')

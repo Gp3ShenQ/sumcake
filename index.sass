@@ -135,6 +135,42 @@
     z-index: 997
     opacity: 0.6
 
+.question
+  display: none
+  position: fixed
+  z-index: 999
+  width: 50%
+  height: 50%
+  background-color: #901317
+  border-radius: 20px
+  top: 50%  
+  left: 50%
+  transform: translate(-50% , -50%)
+  @media screen and (max-width: 768px)
+    height: 60%
+    .text
+      width: 80%
+  @media screen and (max-width: 576px)
+    width: 70%
+  &.change
+    display: block
+.text
+  width: 60%
+  height: 70%
+  margin: 50px auto 0
+  font-size: 30px
+  color: white
+input
+  width: 100%
+button
+  position: absolute
+  top: 300px
+  right: 25%
+  width: 60px
+  height: 60px
+  font-size: 26px
+
+
 .leftbar-box
   position: fixed
   z-index: 999
@@ -436,7 +472,6 @@
       line-height: 40px
       padding: 0
       
-
     .maptitle
       background-color: #901317
       display: inline-block
@@ -458,16 +493,8 @@
         .innerbox
           display: flex
           align-items: center
-      // p
-      //   @media screen and (max-width: 1024px)
-      //     margin: 10px 0px 0px 10px
-
       .icon-location2,.icon-phone-hang-up
         padding: 8px
-
-      // .iconnn.adress,.iconnn.phone
-      //   display: flex
-
       .mapadress,.mapphone
         display: flex
         font-size: 25px
@@ -493,8 +520,6 @@
       flex-direction: column
     @media screen and (max-width: 560px)
       width: 100%
-
-
 
     .mark-box
       width: 60%

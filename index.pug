@@ -32,7 +32,7 @@ html(lang="en")
                     p 所有商品
                 .w.fl3(anchor-target=".map-box") 
                     p 門市據點
-                .w.fl4
+                .w.fl4(anchor-target=".map-box") 
                     p 常見問題
                 .w.fl5
                     p 聯絡我們
@@ -42,7 +42,18 @@ html(lang="en")
                 .li.line3 
 
         .leftbar-shadow
+        .question
+            .text
+                .name 姓名
+                    input 
+                .mail 信箱 
+                    input
+                .ques 問題
+                    input
+            button 送出
+
         .leftbar-box 
+
             .leftbar-img 
                 img(src="./bgimg/leftbarimg.png", alt="")
             .leftbar-word
@@ -142,7 +153,7 @@ html(lang="en")
                                     img(src="./bgimg/comm4.jpg", alt="")
                             .swiper-pagination
 
-        .map-box #5
+        .map-box#5
             .mapapibox 
                 .mapapi 
                     iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.300759237471!2d120.67279621081525!3d24.161182778302216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d7ce5319fb1%3A0x61bd05a22683b8eb!2zNDA05Y-w5Lit5biC5YyX5Y2A5Lit5riF6Lev5LiA5q61MzUw6Jmf!5e0!3m2!1szh-TW!2stw!4v1688912301023!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade", frameborder="0") 
